@@ -22,6 +22,13 @@ class derpy {
        .catch(err => reject(err))
        });
    }
+    static k-on {
+       return new Promise((reject, resolve) => {
+       snekfetch.get(`https://ohlookitsderpy.space/api/k-on`)
+       .then((res) => resolve(res.body))
+       .catch(err => reject(err))
+       });
+   }
 }
 
 module.exports = derpy;
