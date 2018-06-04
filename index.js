@@ -1,28 +1,28 @@
 const snekfetch = require('snekfetch');
 
 class derpy {
-     static miku {
+    static miku() {
        return new Promise((reject, resolve) => {
        snekfetch.get(`https://ohlookitsderpy.space/api/miku`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
    }
-   static lovelive {
+   static lovelive() {
        return new Promise((reject, resolve) => {
        snekfetch.get(`https://ohlookitsderpy.space/api/lovelive`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
    }
-    static ddlc {
+    static ddlc() {
        return new Promise((reject, resolve) => {
        snekfetch.get(`https://ohlookitsderpy.space/api/ddlc`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
    }
-    static k-on {
+    static k_on() {
        return new Promise((reject, resolve) => {
        snekfetch.get(`https://ohlookitsderpy.space/api/k-on`)
        .then((res) => resolve(res.body))
