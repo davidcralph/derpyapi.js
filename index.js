@@ -24,7 +24,7 @@ class derpy {
    }
     static k_on() {
        return new Promise((reject, resolve) => {
-       snekfetch.get(`https://ohlookitsderpy.space/api/k-on`)
+       snekfetch.get(`https://ohlookitsderpy.space/api/k_on`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
