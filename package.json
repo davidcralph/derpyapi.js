@@ -1,0 +1,21 @@
+{
+  "name": "derpy.js",
+  "version": "1.0.0",
+  "description": "Official node.js wrapper for the ohlookitsderpy.space API.",
+  "main": "index.js",
+  "readme": "README.md",
+  "dependencies": {
+   "snekfetch": "^4.0.0"
+  }
+  "keywords": [
+    "API",
+    "image",
+    "random"
+  ],
+  "author": "ohlookitsderpy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohlookitsderpy/derpy.js/issues"
+  },
+  "homepage": "https://github.com/ohlookitsderpy/derpy.js"
+}
