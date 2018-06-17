@@ -29,6 +29,13 @@ class derpy {
        .catch(err => reject(err))
        });
    }
+    static takagi() {
+       return new Promise((reject, resolve) => {
+       snekfetch.get(`https://ohlookitsderpy.space/api/takagi`)
+       .then((res) => resolve(res.body))
+       .catch(err => reject(err))
+       });
+   }
 }
 
 module.exports = derpy;
