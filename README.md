@@ -25,6 +25,9 @@ derpy.miku().then(res => console.log(res)).catch(err => console.log(err));
 
 ``.k_on()`` - Get a random k-on gif
 
+``.takagi()`` - Get a takagi image
+
+
 **Credits**
 
 August for updating stuff TM
