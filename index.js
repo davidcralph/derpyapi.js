@@ -1,41 +1,40 @@
-const snekfetch = require('snekfetch');
+const snekfetch = require('snekfetch'),
+      baseURL = 'https://api.ohlookitsderpy.space';
 
-class derpy {
+module.exports = class derpy {
     static miku() {
        return new Promise((reject, resolve) => {
-       snekfetch.get(`https://ohlookitsderpy.space/api/miku`)
+       snekfetch.get(`${baseURL}/miku`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
    }
    static lovelive() {
        return new Promise((reject, resolve) => {
-       snekfetch.get(`https://ohlookitsderpy.space/api/lovelive`)
+       snekfetch.get(`${baseURL}/lovelive`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
    }
    static ddlc() {
        return new Promise((reject, resolve) => {
-       snekfetch.get(`https://ohlookitsderpy.space/api/ddlc`)
+       snekfetch.get(`${baseURL}/ddlc`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
    }
    static k_on() {
        return new Promise((reject, resolve) => {
-       snekfetch.get(`https://ohlookitsderpy.space/api/k_on`)
+       snekfetch.get(`${baseURL}/k_on`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
    }
    static takagi() {
        return new Promise((reject, resolve) => {
-       snekfetch.get(`https://ohlookitsderpy.space/api/takagi`)
+       snekfetch.get(`${baseURL}/takagi`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
    }
 }
-
-module.exports = derpy;
