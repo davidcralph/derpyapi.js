@@ -1,7 +1,7 @@
 {
   "name": "derpy.js",
   "version": "1.0.0",
-  "description": "Official node.js wrapper for the ohlookitsderpy.space API.",
+  "description": "Official node.js wrapper for the ohlookitsderpy.space API",
   "main": "index.js",
   "readme": "README.md",
   "dependencies": {
