@@ -16,6 +16,13 @@ module.exports = class derpy {
        .catch(err => reject(err))
        });
    }
+   static k_on() {
+       return new Promise((reject, resolve) => {
+       snekfetch.get(`${baseURL}/k-on`)
+       .then((res) => resolve(res.body))
+       .catch(err => reject(err))
+       });
+   }
    static ddlc() {
        return new Promise((reject, resolve) => {
        snekfetch.get(`${baseURL}/ddlc`)
@@ -26,6 +33,20 @@ module.exports = class derpy {
    static takagi() {
        return new Promise((reject, resolve) => {
        snekfetch.get(`${baseURL}/takagi`)
+       .then((res) => resolve(res.body))
+       .catch(err => reject(err))
+       });
+   }
+   static nekoparastatic() {
+       return new Promise((reject, resolve) => {
+       snekfetch.get(`${baseURL}/nekoparastatic`)
+       .then((res) => resolve(res.body))
+       .catch(err => reject(err))
+       });
+   }
+   static nekoparagif() {
+       return new Promise((reject, resolve) => {
+       snekfetch.get(`${baseURL}/nekoparagif`)
        .then((res) => resolve(res.body))
        .catch(err => reject(err))
        });
