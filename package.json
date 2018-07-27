@@ -5,7 +5,7 @@
   "main": "index.js",
   "readme": "README.md",
   "dependencies": {
-   "jaczfetch": "^1.0.0"
+   "snekfetch": "^4.0.4"
   },
   "keywords": [
     "API",
