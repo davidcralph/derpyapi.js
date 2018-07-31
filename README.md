@@ -24,6 +24,8 @@ derpy.miku().then(res => console.log(res)).catch(err => console.log(err));
 
 ``.k_on()`` - Get a random K-On gif
 
+``.konosuba()`` - Get a random Konosuba gif
+
 ``.takagi()`` - Get a random Takagi-san image
 
 ``.nekoparastatic()`` - Get a random Nekopara image (NSFW)
