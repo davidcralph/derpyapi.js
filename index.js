@@ -23,6 +23,13 @@ module.exports = class derpy {
        .catch(err => reject(err))
        });
    }
+   static konosuba() {
+       return new Promise((reject, resolve) => {
+       snekfetch.get(`${baseURL}/konosuba`)
+       .then((res) => resolve(res.body))
+       .catch(err => reject(err))
+       });
+   }
    static ddlc() {
        return new Promise((reject, resolve) => {
        snekfetch.get(`${baseURL}/ddlc`)
