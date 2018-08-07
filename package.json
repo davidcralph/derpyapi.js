@@ -1,5 +1,5 @@
 {
-  "name": "derpy.js",
+  "name": "derpyapi.js",
   "version": "1.0.0",
   "description": "Official node.js wrapper for the ohlookitsderpy.space API",
   "main": "index.js",
@@ -15,7 +15,7 @@
   "author": "ohlookitsderpy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ohlookitsderpy/derpy.js/issues"
+    "url": "https://github.com/ohlookitsderpy/derpyapi.js/issues"
   },
-  "homepage": "https://github.com/ohlookitsderpy/derpy.js"
+  "homepage": "https://github.com/ohlookitsderpy/derpyapi.js"
 }
