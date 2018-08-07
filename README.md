@@ -1,14 +1,14 @@
-# derpy.js
+# derpyapi.js
 Official node.js wrapper for the ohlookitsderpy.space API
 
 **Installation**
 
-``npm install derpy.js`` 
+``npm install derpyapi.js`` 
 
 **Example**
 
 ```js
-const derpy = require("derpy.js");
+const derpy = require("derpyapi.js");
 
 derpy.miku().then(res => console.log(res)).catch(err => console.log(err));
 
