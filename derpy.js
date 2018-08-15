@@ -1,5 +1,5 @@
 const fetch = require('node-superfetch'),
-      baseURL = 'https://api.ohlookitsderpy.space';
+      baseURL = 'https://derpyapi.glitch.me';
 
 module.exports = class derpy {
     static miku() {
