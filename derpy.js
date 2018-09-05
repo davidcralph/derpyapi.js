@@ -44,6 +44,13 @@ module.exports = class derpy {
        .catch(err => reject(err))
        });
    }
+   static sao() {
+       return new Promise((reject, resolve) => {
+       fetch.get(`${baseURL}/sao`)
+       .then((res) => resolve(res.body))
+       .catch(err => reject(err))
+       });
+   }
    static nekoparastatic() {
        return new Promise((reject, resolve) => {
        fetch.get(`${baseURL}/nekoparastatic`)
