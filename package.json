@@ -1,15 +1,17 @@
 {
   "name": "derpyapi.js",
-  "version": "1.0.0",
-  "description": "Official node.js wrapper for the ohlookitsderpy.space API",
+  "version": "2.0.0",
+  "description": "Official node.js wrapper for Derpy API",
   "main": "index.js",
   "readme": "README.md",
   "dependencies": {
-   "node-superfetch": "^0.1.5"
+    "node-superfetch": "0.1.9"
   },
   "keywords": [
     "API",
     "image",
+    "text",
+    "imagegen",
     "random"
   ],
   "author": "ohlookitsderpy",
