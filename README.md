@@ -28,7 +28,7 @@ derpy.miku().then(res => console.log(res)).catch(err => console.log(err));
 
 ``.takagi()`` - Get a random Takagi-san image
 
-``sao()`` - Get a random SAO wallpaper
+``.sao()`` - Get a random SAO wallpaper
 
 ``.nekoparastatic()`` - Get a random Nekopara image (NSFW)
 
