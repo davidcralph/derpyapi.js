@@ -1,9 +1,9 @@
 # derpyapi.js
-Official node.js wrapper for the ohlookitsderpy.space API
+Official node.js wrapper for the derpyenterprises.org API
 
 **Installation**
 
-``npm install derpyapi.js`` 
+``npm install derpyapi.js`` (or ``yarn add derpyapi.js`` if you're cool)
 
 **Example**
 
@@ -37,4 +37,6 @@ derpy.miku().then(res => console.log(res)).catch(err => console.log(err));
 
 **Credits**
 
-August for updating stuff TM
+August for originally updating stuff
+
+Speyd3r for hosting API <3
