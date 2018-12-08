@@ -1,4 +1,4 @@
-const fetch = require('node-superfetch');
+const { get } = require('node-superfetch');
 
 module.exports = class derpy {
     constructor(options) {
@@ -8,7 +8,7 @@ module.exports = class derpy {
 
     static image(type) {
         return new Promise((reject, resolve) => {
-            fetch.get(`${this.url}/image/${type}`)
+            get(`${this.url}/image/${type}`)
                 .set("Authorization", this.key)
                 .then((res) => resolve(res.body))
                 .catch(err => reject(err))
@@ -17,7 +17,7 @@ module.exports = class derpy {
 
     static text(type, text) {
         return new Promise((reject, resolve) => {
-            fetch.get(`${this.url}/text/${type}?text=${text}`)
+            get(`${this.url}/text/${type}?text=${text}`)
                 .set("Authorization", this.key)
                 .then((res) => resolve(res.body))
                 .catch(err => reject(err))
@@ -25,11 +25,11 @@ module.exports = class derpy {
     }
 
     static imagegen(type, url, text, query) {
-        let owo; //OwO what's this?
+        let owo; // OwO what's this?
         if (!url) return owo = text;
         if (!text) return owo = url;
         return new Promise((reject, resolve) => {
-            fetch.get(`${this.url}/imagegen/${type}?${owo}=${query}`)
+            get(`${this.url}/imagegen/${type}?${owo}=${query}`)
                 .set("Authorization", this.key)
                 .then((res) => resolve(res.body))
                 .catch(err => reject(err))
