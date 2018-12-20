@@ -1,5 +1,5 @@
 # derpyapi.js
-Official node.js wrapper for the derpyenterprises.org API
+Official node.js wrapper for the Derpy API
 
 **Installation**
 
@@ -7,11 +7,22 @@ Official node.js wrapper for the derpyenterprises.org API
 
 **Example**
 
+Async 
 ```js
-const derpy = require("derpyapi.js");
+const { miku } = require('derpyapi.js');
 
-derpy.miku().then(res => console.log(res)).catch(err => console.log(err));
+async function getMiku() {
+  const gang = await miku();
+  return gang;
+}
 
+console.log(getMiku());
+```
+Sync
+```js
+const { miku } = require('derpyapi.js');
+
+miku().then(res => console.log(res)).catch(err => console.log(err));
 ```
 
 **Methods**
@@ -39,6 +50,6 @@ Text: /letter, /paper, /kirb
 
 **Credits**
 
-August for originally updating stuff
+[August](https://github.com/auguwu) for originally updating stuff
 
-Speyd3r for hosting API <3
+[Speyd3r](https://github.com/Speyd3r) for hosting API <3
