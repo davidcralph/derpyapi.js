@@ -3,7 +3,7 @@ const { get } = require('node-superfetch');
 module.exports = class derpy {
     constructor(options) {
         this.key = options.key;
-        this.url = options.url || 'https://api.derpyenterprises.org'
+        this.url = options.url || 'https://apiv2.derpyenterprises.org'
     }
 
     static image(type) {
