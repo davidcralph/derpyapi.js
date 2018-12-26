@@ -1,40 +1,55 @@
 # derpyapi.js
-Official node.js wrapper for the ohlookitsderpy.space API
+Official node.js wrapper for the Derpy API
 
 **Installation**
 
-``npm install derpyapi.js`` 
+``npm install derpyapi.js`` (or ``yarn add derpyapi.js`` if you're cool)
 
 **Example**
 
+Async 
 ```js
-const derpy = require("derpyapi.js");
+const { miku } = require('derpyapi.js');
 
-derpy.miku().then(res => console.log(res)).catch(err => console.log(err));
+async function getMiku() {
+  const gang = await miku();
+  return gang;
+}
 
+console.log(getMiku());
+```
+Sync
+```js
+const { miku } = require('derpyapi.js');
+
+miku().then(res => console.log(res)).catch(err => console.log(err));
 ```
 
 **Methods**
+```
+GET /img
+Returns random wallpaper/gif
+Example: /takagi
+Options: 
+Wallpaper: /takagi, /miku, /ddlc,
+Gif:  /k_on, /lovelive, /konosuba, /sao
+NSFW: /nekopara  (?type=gif also works if you like gifs), /overwatch
 
-``.miku()`` - Get a random Miku wallpaper
+GET /text
+Modifies given text
+Example: /flip?text=uwu
+Options: /mock, /flip, /reverse, /flip, /leet, /cramp, /space, /indicator, /aesthetic, /tiny, /clapify, /eyeify
 
-``.ddlc()`` - Get a random DDLC wallpaper
-
-``.lovelive()`` - Get a random Love Live gif
-
-``.k_on()`` - Get a random K-On gif
-
-``.konosuba()`` - Get a random Konosuba gif
-
-``.takagi()`` - Get a random Takagi-san image
-
-``.sao()`` - Get a random SAO wallpaper
-
-``.nekoparastatic()`` - Get a random Nekopara image (NSFW)
-
-``.nekoparagif()`` - Get a random Nekopara gif (NSFW)
-
+GET /imagegen
+Generates good quality memes yes
+Example: /kirb?text=qts are qt af, /jpeg?url=https://<url>
+Options: 
+URL: /jpeg, /invert, /flip, /grayscale, /blur, /pillow
+Text: /letter, /paper, /kirb
+```
 
 **Credits**
 
-August for updating stuff TM
+[August](https://github.com/auguwu) for originally updating stuff
+
+[Speyd3r](https://github.com/Speyd3r) for hosting API <3
